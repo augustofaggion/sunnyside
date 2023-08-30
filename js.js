@@ -1,6 +1,6 @@
 // Jquery
 $(document).ready(() =>{
-    $('.hamburger').on('click', () =>{
+    $('.hamburger').on('click', () => {
         $('.nav-links').toggleClass('active');
     });
 });

@@ -36,10 +36,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .logo{
     font-family: var(--fraun);
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 .nav-links a{
@@ -47,37 +51,96 @@ header{
     color: var(--white);
 }
 
+/* Home */
 
-/* Hamburger */
-.hamburger{
+.home{
+    background-color: transparent;    
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+.home img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    top: 6px;
+}
+
+.we{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.we img{
+    width: 40px;
+    height: auto;
+}
+/* Change the settings later */
+
+
+/* Hamburger  for later in case doestn work*/
+/* .hamburger{
     display: none;
     flex-direction: column;
     cursor: pointer;
-    
-}
+} */
 
-.line{
+/* .line{
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 3px 0;
     transition: .4s;
-}
+} */
 
 /* Media Query for Hamburger */
 @media screen and (max-width: 768px){
     .nav{
         flex-direction: row;
-        
+        justify-content: space-between;
         align-items: center;
-        
+        padding: 10px 20px;
     }
+
     .nav-links{
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--blue);
+        transition: right 0.4s ease-in-out;
     }
+
+    .nav-links a {
+        padding: 10px;
+    }
+
+    .nav-links.active{
+        right: 0;
+    }
+
     .hamburger{
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 9999;
+        padding: 10px;        
+    }
+
+    .line{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin:  3px 0;
+        transition: .4s;
     }
 }

@@ -75,9 +75,16 @@ header{
     margin-top: 1rem;
 }
 
+.we h1{
+    font-size: 4rem;
+    font-family: var(--fraun);
+    color: var(--white);
+}
+
 .we img{
     width: 40px;
-    height: auto;
+    height: 100px;
+    margin: 250px;
 }
 /* Change the settings later */
 
@@ -142,5 +149,28 @@ header{
         background-color: #fff;
         margin:  3px 0;
         transition: .4s;
+    }
+
+    /* home */
+    .we{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 37%;
+    }
+    
+    .we h1{
+        font-size: 1rem;
+        font-family: var(--fraun);
+        color: var(--white);
+    }
+    
+    .we img{
+        width: 15px;
+        height: 50px;
+        margin: 150px;
     }
 }

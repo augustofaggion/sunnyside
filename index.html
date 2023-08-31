@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnyside</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-            <a href="" class="logo">sunnyside</a>
-            <!-- hamburger list -->
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <!-- Hamburger List -->
-            <div class="nav-links">
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Projects</a>
-                    <a id="Contact" href="">Contact</a>
-            </div>
-        </nav>
+      <nav class="nav">
+        <a href="" class="logo">sunnyside</a>
+        <!-- hamburger list -->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <!-- Hamburger List -->
+        <div class="nav-links">
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Projects</a>
+          <a id="contact" href="">Contact</a>
+        </div>
+      </nav>
     </header>
     <section class="home">
-        <img src="./img/header/image-header.jpg" alt="">
-        <div class="we">
-            <h1>We are creatives</h1>
-            <img src="./img/icon-arrow-down.svg" alt="">
+      <div class="we">
+        <h1>We are creatives</h1>
+        <img src="./img/icon-arrow-down.svg" alt="" />
+      </div>
+    </section>
+    <section class="services">
+      <!-- Egg -->
+      <div class="egg__box">
+        <div class="egg__content">
+          <h1>Transform your Brand</h1>
+          <p>
+            We are full-service creative agendy specializing in helping brands
+            grow fast. Engage your clients through comeplling visuals tht do most
+            of the marketing for you.
+          </p>
+          <a href="" class="learn__more">Learn more</a>
         </div>
+        <div class="egg__img">
+          <img src="./img/egg/image-transform.jpg" alt="" />
+        </div>
+      </div> 
+      <!-- Glass -->
+      <div class="egg__box">
+        <div class="egg__img glass">
+          <img src="./img/egg/image-stand-out.jpg" alt="">
+        </div>
+        <div class="egg__content glass__content">
+          <h1>Stand out to the right audience</h1>
+          <p>
+            Using a collaborative formula of designers,
+            researchers, phtographers, videographers,
+            and copywriters, we'll build and extend
+            your brand in digital places
+          </p>
+          <a href="" id="pink">Learn more</a>
+        </div>
+      </div>
+      <!-- Glass -->
+    </section>
+    <!-- Fruits -->
+    <section id="fruits">
+      <div class="fruit">
+        <div class="fruit__box">
+          <img src="./img/egg/image-graphic-design.jpg" alt="">
+          <div class="text">
+            <h1 class="text__fruit">Graphic Design</h1>
+            <p class="text__fruit">
+              Great design makes you memorable. We deliver
+              artwork that underscores your brand message
+              and captures potential client's attention.
+            </p>
+          </div>
+        </div>
+        <div class="fruit__box">
+          <img src="./img/egg/image-photography.jpg" alt="">
+          <div class="text">
+            <h1 class="text__fruit">Photography</h1>
+            <p class="text__fruit">
+              Increase your credibility by getting the
+              <br>most stunning,  high-quality phtos that
+              <br>improve your business image
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h1>CLIENT TESTIMONIALS</h1>
+      <div class="test__container">
+        <div class="client">
+          <img src="./img/image-emily.jpg" alt="">
+        </div>
+        <div class="client">
+          <img src="./img/image-thomas.jpg" alt="">
+        </div>
+        <div class="client">
+          <img src="./img/image-jennie.jpg" alt="">
+        </div>
+      </div>
     </section>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- Jquery Finish -->
     <script src="js.js"></script>
-</body>
+  </body>
 </html>

@@ -67,10 +67,10 @@ header {
 .home {
   background-color: transparent;
   margin: 0;
-  max-height: 700px;
+  max-height: 800px;
   background-image: url("./img/header/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 2000px;
 }
 
 
@@ -115,11 +115,11 @@ header {
 
 .egg__content p{
   color: var(--darkGryishBlue);
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 .egg__content a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: underline;
   text-decoration-color: var(--yellow);
   text-decoration-thickness: 3px;
@@ -149,6 +149,7 @@ header {
 .fruit__box img{
   width: 100%;
   height: auto;
+  content: fit;
 }
 
 .text__fruit{
@@ -179,117 +180,29 @@ header {
 .test__container{
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+}
+.personal{
+  text-align: center;
+  font-size: .8rem;
+  color: var(--grayishBlue);
+}
+
+.names{
+  font-weight: 700;
+  color: black;
+}
+
+.jobs{
+  font-size: .5rem;
 }
 
 .client img{
   width: 50px;
   border-radius: 50%;
 }
-/* Change the settings later */
-
-/* Hamburger  for later in case doestn work*/
-/* .hamburger{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-} */
-
-/* .line{
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 3px 0;
-    transition: .4s;
-} */
 
 /* Media Query for Hamburger */
-@media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--blue);
-    transition: right 0.4s ease-in-out;
-  }
-
-  .nav-links a {
-    padding: 10px;
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    z-index: 9999;
-    padding: 10px;
-  }
-
-  .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-    transition: 0.4s;
-  }
-
-  /* home */
-  .we {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 37%;
-  }
-
-  .we h1 {
-    font-size: 1.5rem;
-    font-family: var(--fraun);
-    color: var(--white);
-  }
-
-  .we img {
-    max-width: 15px;
-    max-height: 50px;
-    margin: 30%;
-  }
-
-  
-}
 
 
-/* Mobile */
-@media screen and (max-width: 495px){
-  .egg__box {
-    flex-direction: column;
-  }
 
-  .egg__content{
-    text-align: center;
-    margin: 50px 20px;
-  }
-
-  .egg_img{
-    width: 100%;
-    height: auto;
-    order: -1;
-  }
-}
